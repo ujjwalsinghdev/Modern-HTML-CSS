@@ -1,0 +1,29 @@
+/* Navbar */
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #e6beae;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: .75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+    background: #b2967d;
+    border-radius: 5px;
+}

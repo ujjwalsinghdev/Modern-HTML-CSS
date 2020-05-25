@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Align</title>
+
+    <style>
+        #container {
+            background: #555555;
+            height: 600px;
+            display: flex;
+            /* Wrap item for avoid overflow */
+            flex-wrap: wrap;
+            /* Align item horizontal */
+            justify-content: space-evenly;
+            /* Aligh item vertical (HIEGHT MUST BE PROVIDED) */
+            align-items: center;
+            /* arrange item inside container */
+            align-content:space-between;
+        }
+
+        
+
+        .item {
+            background: lightslategray;
+            border: 2px solid red;
+            text-align: center;
+            padding: 1rem;
+            margin: 0.75rem;
+            /* give items width */
+            flex-basis: 200px;
+        }
+
+       .item-1{
+            border: 2px solid green;
+            /* move this item-1 to place of item-3 */
+            order: 3;
+        }
+
+        .item-2{
+            border: 2px solid green;
+            /* align single item center */
+            align-self: center;
+        }
+
+        .item-3{
+            border: 2px solid green;
+        }
+
+        
+
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="item item-1">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item item-2">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item item-3">
+            <h3>Item 3</h3>
+        </div>
+
+       
+
+    </div>
+</body>
+
+</html>

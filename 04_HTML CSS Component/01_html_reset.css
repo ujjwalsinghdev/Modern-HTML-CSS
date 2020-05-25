@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: .75rem 0;
+}
+
+/* Utility Classes */
+
+.text-primary {
+    color: #b2967d;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            display: none;
+        }
+
+
+        @media (max-width: 1024px) {
+            body {
+                background: brown;
+            }
+
+            #widescreen h1 {
+                display: block;
+            }
+        }
+
+        @media (max-width: 900px) {
+            body {
+                background: aqua;
+            }
+
+            #normal h1 {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background: indianred;
+            }
+
+            #computer h1 {
+                display: block;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+            body {
+                background: green;
+            }
+
+            #tablet h1 {
+                display: block;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                background: red;
+            }
+
+            #smartphone h1 {
+                display: block;
+            }
+        }
+
+        @media (max-width: 320px) {
+            body {
+                background: blue;
+            }
+
+            #small_mobile h1 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="widescreen">
+        <h1>widescreen</h1>
+    </div>
+    <div id="normal">
+        <h1>normal</h1>
+    </div>
+    <div id="computer">
+        <h1>computer size</h1>
+    </div>
+    <div id="tablet">
+        <h1>tablet</h1>
+    </div>
+    <div id="smartphone">
+        <h1>smartphone</h1>
+    </div>
+    <div id="small_mobile">
+        <h1>small mobile</h1>
+    </div>
+
+</body>
+
+</html>

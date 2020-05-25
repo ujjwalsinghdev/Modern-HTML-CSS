@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            background: coral;
+            margin: 1rem;
+            padding: 1rem;
+            color: #fff;
+            /* box shadow: offset-x|offset-y|color */
+            box-shadow: 10px 10px teal;
+
+            /* box shadow: offset-x|offset-y|blur radius| color */
+            box-shadow: 10px 10px 10px rebeccapurple;
+
+            /* negative values */
+            box-shadow: -10px -10px 10px rebeccapurple;
+
+            /* box shadow: offset-x|offset-y|blur radius|spread-radius color */
+            box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .9);
+
+            /* box shadow: inset|offset-x|offset-y|color */
+
+            box-shadow: inset 3px 3px teal;
+
+            /* Multiple shadow */
+
+            box-shadow: 3px 3px 10px teal, -3xp -3px 10px olive;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, iure.
+            </p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, iure.
+            </p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, iure.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styling */
+
+html,
+body {
+    font-family: 'DM Mono', monospace;
+    background: #5bdb94;
+}
+
+a {
+    color: #44534e;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Utility Classes */
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+    overflow: auto;
+    padding: 0 20px;
+
+}
+
+.text-primary {
+    color: #54759e;
+}
+
+.lead {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background: #44534e;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 1.6rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #54759e;
+}
+
+.btn-light {
+    border: 2px solid #54759e;
+}
+
+.clr {
+    clear: both;
+}
+
+.py-1 {
+    padding: 10px 0;
+}
+
+.py-2 {
+    padding: 20px 0;
+}
+
+.py-3 {
+    padding: 30px 0;
+}
+
+.l-heading {
+    font-size: 2.5rem;
+}
+
+/* Navbar */
+
+#navbar {
+    background: #328973;
+    color: white;
+    overflow: auto;
+}
+
+#navbar a {
+    color: white;
+}
+
+#navbar h1 {
+    float: left;
+    padding: 20px;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover {
+    color: #44534e;
+}
+
+/* Showcase */
+
+#showcase {
+    background: url(./img/home.svg) no-repeat center center/cover;
+    height: 600px;
+}
+
+#showcase .showcase-content {
+    text-align: center;
+    padding-top: 170px;
+
+
+}
+
+#showcase .showcase-content h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+}
+
+#showcase .showcase-content p {
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Home Info */
+
+#home-info {
+    height: 400px;
+
+}
+
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url(./img/wine.svg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+
+}
+
+#home-info .info-content {
+    background: #44534e;
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+/* Features */
+
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+    color: #44534e;
+
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+#main-footer {
+    text-align: center;
+    color: white;
+    background: #44534e;
+}
+
+/* ABOUT PAGE */
+
+#about-info {
+    background: #54759e;
+}
+
+
+
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+    color: #fff;
+}
+
+#about-info .info-rigth {
+    border: 2px solid green;
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-rigth img {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+/* Testimonials */
+
+#testimonials {
+    text-align: center;
+}
+
+#testimonials .testimonial {
+    background: #54759e;
+}
+
+#testimonials .testimonial img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+/* Contact Form */
+
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form .form-group label {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+#contact-form .form-group input {
+
+    outline: none;
+    width: 100%;
+    padding: 20px 30px;
+    border: none;
+
+}
+
+#contact-form .form-group textarea {
+
+    outline: none;
+    width: 100%;
+    padding: 20px 30px;
+
+}
+
+#ontact-form .form-group .btn{
+    border: 2px solid red;
+    display: block;
+    margin: auto;
+
+}

@@ -1,0 +1,119 @@
+/* CSS RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* RESPONSIVE IMAGE ON WHOLE SCEEN */
+
+.example {
+    background: #333333 url(https://source.unsplash.com/daily);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* ShortHand */
+.example {
+    background: #333333 url(https://source.unsplash.com/daily) no-repeat center center/cover;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+/* max width: responsiveness of website at mobile
+   margin:auto ; position div at center
+   text-align: center; apply on p or h to center text
+   text-align: justify; apply on p or h to justify left right text
+
+   margin can only used with block level element
+   width and margin do not work with inline element   
+*/
+.example {
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* CSS FONT RESET */
+/* 62.5 % means it sets value of html is 10px so we can easily use rem unit */
+html {
+    font-size: 62.5%;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: lightslategrey;
+    color: white;
+    padding: .75rem 2rem;
+
+}
+
+/* Margin and Padding */
+/* Means 1rem top/bottom and 0 rem left right */
+header p {
+    margin: 1rem 0;
+}
+
+
+/* FLEX BOX */
+
+/* flex-direction set the item horizontally */
+/* flex-wrap make to move item other line if they exceed */
+/* flex-flow short hand for above property */
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+}
+
+/* flex:1 means the item will distribute equally */
+
+.item {
+    flex: 1;
+}
+
+/* MORE ON FLEX BOX */
+#container {
+    background: #555555;
+    height: 600px;
+    display: flex;
+    /* Wrap item for avoid overflow */
+    flex-wrap: wrap;
+    /* arrange item horizontal */
+    justify-content: space-evenly;
+    /* arrange item vertical (HIEGHT MUST BE PROVIDED) */
+    align-items: center;
+    /* arrange item inside container */
+    align-content: space-between;
+}
+
+/* MANUPULATE ITEM UNDER #container */
+.item {
+    background: lightslategray;
+    border: 2px solid red;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.75rem;
+    /* give items width */
+    flex-basis: 200px;
+}
+
+.item-1 {
+    border: 2px solid green;
+    /* move this item-1 to place of item-3 */
+    order: 3;
+}
+
+.item-2 {
+    border: 2px solid green;
+    /* align single item center */
+    align-self: center;
+}

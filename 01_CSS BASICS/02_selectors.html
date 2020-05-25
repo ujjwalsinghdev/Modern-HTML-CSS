@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+    <style>
+        /* Element Selector */
+
+        /* Body Styling */
+
+        body {
+            background-color: skyblue;
+        }
+
+        h2#green-heading {
+            color: greenyellow;
+        }
+
+        #welcome {
+            background: hotpink;
+        }
+
+        #about {
+            background: indigo;
+        }
+
+        /* Multiple Selector */
+
+        #welcome,
+        #about {
+            border: 1px solid rosybrown;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        /* Nested Selector */
+
+        #welcome p {
+            font-size: 2rem;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="welcome">
+        <h2 id="green-heading">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus repudiandae facere vero aliquam dolore
+            modi unde veniam corrupti aut ipsa, nam porro suscipit voluptatem omnis adipisci impedit ab voluptatibus
+            quaerat!</p>
+    </div>
+
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iure laudantium harum veniam consequatur.
+            Recusandae amet excepturi fugiat esse quisquam.</p>
+    </div>
+</body>
+</html>

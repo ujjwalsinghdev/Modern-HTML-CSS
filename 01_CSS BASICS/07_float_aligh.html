@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Alignment</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+      
+        body{
+            font-family: sans-serif;
+            line-height: 1.4rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin:30px auto;
+
+        }
+        .box{
+            background: grey;
+            border: 2px solid slateblue;
+            margin: 1rem;     
+        }
+
+        .box p{
+            text-align: justify;
+        }
+
+        #box-2{
+            border: 2px solid red;
+            float: right;
+
+            width: 70%;
+        }
+
+        #box-3{
+            border: 2px solid blue;
+            float: left;
+
+            width: 70%;
+        }
+
+        .clr{
+            clear: both;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="box-1" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quaerat itaque corrupti, in libero
+                distinctio
+                id aperiam doloremque provident consectetur.</p>
+        </div>
+
+        <div id="box-2" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quaerat itaque corrupti, in libero
+                distinctio
+                id aperiam doloremque provident consectetur.</p>
+        </div>
+
+        <div id="box-2" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quaerat itaque corrupti, in libero
+                distinctio
+                id aperiam doloremque provident consectetur.</p>
+        </div>
+
+        
+        
+        <div id="box-4" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quaerat itaque corrupti, in libero
+                distinctio
+                id aperiam doloremque provident consectetur.</p>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
